@@ -1,0 +1,204 @@
+@import url("../fontawesome-free-5.15.3-web/fontawesome-free-5.15.3-web/css/all.css");
+@import url("../myfont/stylesheet.css");
+
+/* ------------------
+    VARIABLES
+ -------------------*/
+:root{
+ --primary-color:hsl(0, 100%, 56%);
+ --secondary-color:hsl(15, 100%, 60%);
+ --clr-grey-1:hsl(0, 0%, 12%);
+ --clr-black-2:hsl(0, 0%, 68%);
+ --clr-grey-2:hsl(0, 0%, 92%);
+ --clr--grey5:hsl(0, 0%, 96%);
+ --color-white:#fff;
+ --primary-familyfont:'Niconne', cursive;
+ --secondary-familyfont:'PT Sans', sans-serif;
+ --transition: all .3s linear;
+ --spacing:.25rem;
+ --raduis:.5rem
+}
+
+/* ------------------
+    GLOBAL STYLES
+ -------------------*/
+
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+
+body{
+ font-size: .875rem;
+ letter-spacing: var(--spacing);
+ line-height: 1.25rem;
+
+}
+
+
+
+a{
+ text-decoration: none;
+ text-transform: uppercase;
+}
+ul{
+ list-style-type: none;
+}
+img{
+width: 100%;
+display: block;
+}
+h1,h2,h3,h4{
+    font-family: var(--primary-color);
+    line-height: 3rem;
+    letter-spacing: var(--spacing);
+    color: var(--primary-color);
+    text-transform: capitalize;
+    margin-bottom: .575rem;
+    margin-top: .875rem;
+}
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2.5rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+h4{
+    font-size: 1rem;
+}
+
+p{
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width:800px) {
+    h1,h2,h3,h4{
+    
+    line-height: 1.25rem;
+   
+}
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 3rem;
+}
+h3{
+    font-size: 2.5rem;
+}
+h4{
+    font-size: 1.5rem;
+}
+body{
+    font-size: 1rem;
+}
+}
+
+.btn{
+    background:var(--color-white);
+    color:var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: var(--spacing);
+    padding: .8rem 1rem;
+    display: inline-block;
+    cursor: pointer;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+    transition: var(--transition);
+    font-size: 1rem;
+    
+
+}
+.btn:hover{
+background-color:var(--primary-color);
+color: var(--color-white);
+    
+}
+
+
+
+.hero-btn{
+    outline: 2px solid var(--primary-color);
+    outline-offset: 3px;
+    text-align: center;
+    margin-top: 2rem;
+    color: var(--primary-color);
+}
+
+
+
+
+
+
+.hero{
+ background: var(--primary-color);
+ min-height: 100vh;
+ display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.hero-banner{
+  text-align: center; 
+  padding: 0 3rem;
+    
+}
+.hero-banner h2{
+text-transform: uppercase;
+color: var(--color-white);
+margin-bottom: 1.8rem;
+}
+.hero-banner p{
+    color: var(--color-white);
+    max-width: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media  screen and (min-width:768px) {
+ .hero{
+     background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url("../images/hammerton-college-1751689_960_720.jpg") center/cover no-repeat fixed;
+ } 
+ .hero-banner h2{
+     color: var(--primary-color);
+     margin-bottom: 2.5rem;
+ }
+ .hero-btn{
+     background: var(--primary-color);
+     color: var(--color-white);
+     
+     
+ }
+ .hero-btn:hover{
+       background: var(--color-white);
+     color: var(--primary-color);
+ }
+ .hero-banner p{
+     max-width: 39rem;
+     margin-bottom: 1.1rem;
+ }
+}
+
+
+.aboutus{
+    width:85vw;
+    margin-left: auto;
+    margin-right: auto;
+  
+
+}
+
+.about-title{
+   padding: 2rem 1rem; 
+   text-align: center;
+}
+
+.aboutus span{
+    color: black;
+}
