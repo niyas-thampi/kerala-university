@@ -120,7 +120,35 @@ background-color:var(--primary-color);
 color: var(--color-white);
     
 }
+.title h2{
+   padding: 2rem 1rem; 
+   text-align: center;
+   font-family: var(--primary-familyfont);
+   text-transform: capitalize;
+   
+}
 
+.title span{
+    color: black;
+}
+.section{
+    width:90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+@media screen and (min-width:992px) {
+    .section{
+        width:95vw;
+    }
+}
+
+
+
+
+/*---------
+HOME
+---------*/
 
 
 .hero-btn{
@@ -185,20 +213,41 @@ margin-bottom: 1.8rem;
  }
 }
 
+/*-----------
+ABOUT-US
+-------------*/
 
-.aboutus{
-    width:85vw;
-    margin-left: auto;
-    margin-right: auto;
-  
 
+
+.about-btn{
+    background-color:orangered;
+    color: white;
+    margin-top: .875rem;
 }
-
-.about-title{
-   padding: 2rem 1rem; 
-   text-align: center;
+.about-btn:hover{
+    background-color:grey;
+    
 }
-
-.aboutus span{
-    color: black;
+.about-img,.about-info{
+    margin-bottom: 2rem;
+}
+@media screen and (min-width:992px) {
+    .section-center{
+        display:flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        height: 60vh;
+       
+        
+        
+    }
+    .about-img,.about-info{
+        flex: 0 0 calc(50% - 5rem);
+        margin-bottom: 0;
+        align-self: center;
+    }
+    .about-info h3{
+    font-size: 2rem;
+    margin-bottom: 1.4rem;
+}
 }
